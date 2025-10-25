@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author-CjDev">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Journal</title>
+</head>
+<body>
+    <h1> Create Journal</h1>
+ <form action="/api/v1/journals" method="post">
+<label for="main-title">Journal Title</label> <br>
+    <input id="main-title" type="text" name="'title" placeholder="Enter your title" minlength="3" required> <br>
+     
+<label for="journal-category"> Type</label>   <br>
+ <select id="journal-category" name="category" required>
+    <option value="task">Task</option>
+    <option value="note">Note</option>
+    <option value="idea">Idea</option>
+    <option value="goal">Goal</option>
+    <option value="event">Event</option>
+    <option value="mood">Mood</option>
+    <option value="habbit">Habbit</option>
+    <option value="memory">Memory</option>
+
+ </select> <br>
+    
+<label for="entry"> Entry</label> <br> 
+<textarea id=" journal-entry" name="User's Entery" placeholder="Write your messsage here" rows="5" cols="30" minlength="10" required>
+    </textarea> <br>
+
+    <button type="submit"> Submit </button>
+ </form> <br>
+
+
+    
+</body>
+</html> 
